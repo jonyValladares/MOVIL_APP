@@ -16,7 +16,9 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun LoginBottomBar() {
-    Row (modifier = Modifier.fillMaxWidth().padding(20.dp),
+    Row (modifier = Modifier
+        .fillMaxWidth()
+        .padding(20.dp),
         horizontalArrangement = Arrangement.Center){
 
         Text(
@@ -33,6 +35,7 @@ fun LoginBottomBar() {
 
         )
 
+         Text(text = "werferf")
 
     }
 }
