@@ -1,4 +1,4 @@
-package com.Jonathan.gamermvvmapp.Presentation.login.screens
+package com.Jonathan.gamermvvmapp.Presentation.login.screens.SingIn
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
@@ -24,6 +24,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.NavHostController
 import com.Jonathan.gamermvvmapp.R
 import com.Jonathan.gamermvvmapp.Presentation.login.components.LoginBottomBar
 import com.Jonathan.gamermvvmapp.Presentation.login.components.LoginContent
@@ -33,7 +35,7 @@ import com.Jonathan.gamermvvmapp.Presentation.login.components.LoginTopbar
 @OptIn(ExperimentalMaterial3Api::class)
 
 @Composable
-fun LoginScreen (){
+fun LoginScreen (navController: NavHostController){
      //ESQUELETO DE LA APLICACION SIEMPRE SE UTULIZA AL PONER UNA PANTALLA
     Scaffold(
         topBar = { LoginTopbar()},
